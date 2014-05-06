@@ -1,0 +1,58 @@
+extends layout
+block content
+    div.container
+        div.row
+            div(class='col-xs-12 col-md-8')
+                h2 Current Pack
+                ul(class='row list-unstyled')
+                    li(class='col-xs-4'): a: img(class='img-rounded', src='http://static.tappedout.net/mtg-cards/_user-added/femme_fatale-Dark%20Favor%20[M14]_medium.png')
+                    li(class='col-xs-4'): a: img(class='img-rounded', src='http://static.tappedout.net/mtg-cards/_user-added/femme_fatale-Dark%20Favor%20[M14]_medium.png')
+                    li(class='col-xs-4'): a: img(class='img-rounded', src='http://static.tappedout.net/mtg-cards/_user-added/femme_fatale-Dark%20Favor%20[M14]_medium.png')
+                    li(class='col-xs-4'): a: img(class='img-rounded', src='http://static.tappedout.net/mtg-cards/_user-added/femme_fatale-Dark%20Favor%20[M14]_medium.png')
+                    li(class='col-xs-4'): a: img(class='img-rounded', src='http://static.tappedout.net/mtg-cards/_user-added/femme_fatale-Dark%20Favor%20[M14]_medium.png')
+                    li(class='col-xs-4'): a: img(class='img-rounded', src='http://static.tappedout.net/mtg-cards/_user-added/femme_fatale-Dark%20Favor%20[M14]_medium.png')
+                    li(class='col-xs-4'): a: img(class='img-rounded', src='http://static.tappedout.net/mtg-cards/_user-added/femme_fatale-Dark%20Favor%20[M14]_medium.png')
+
+            div(class='col-xs-6 col-md-4')
+                h2 Picked so far
+                table(class='table table-striped table-hover')
+                    thead
+                        tr
+                            th Turn
+                            th Card Name
+                            th Mana Cost
+                    tbody
+                        tr
+                            td 1
+                            td Dawnbringer Charioteers
+                            td 2WW
+                        tr
+                            td 1
+                            td Dawnbringer Charioteers
+                            td 2WW
+                        tr
+                            td 1
+                            td Dawnbringer Charioteers    
+                            td 2WW
+
+                div(class='panel panel-default')
+                    div(class='panel-heading') Chat
+                    div(class='panel-body')#msgs
+                    form(class='form-inline', id='login')
+                        input(type='text', class='input-small', placeholder='Name', id='name')
+                        input(type='button', name='join', id='join', value="Join", class='btn btn-primary')
+                    form(id='chat' class='form-inline')
+                        input(type='text', class='input', placeholder='Message', id='msg')
+                        input(type='button', class='btn btn-success', name='send', id='send', value='Send')    
+
+                div(class='panel panel-default')
+                    div(class='panel-heading') Players
+                    div(class='panel-body')
+                        ul(class='list-group', id='people')
+    
+        hr
+        footer
+            p This is a footer
+
+    - local_data = room
+    input(type='hidden', value=local_data)#roomID

@@ -1,0 +1,11 @@
+{
+    "name": "nodeDraft",
+    "version": "0.0.0",
+    "description": "MTG Draft Simulator in Node JS",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "jade": "latest"
+    },
+    "author": "Alex Marcotte <alex@codefu.ca>"
+}

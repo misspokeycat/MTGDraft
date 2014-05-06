@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Draft
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    script(src='/socket.io/socket.io.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')
+  body
+    block content
+        div(class='jumbotron')
+            div(class='container')
+                h1 Welcome
+                p This app will let you simulate Magic: The Gathering drafts in real-time in a private room with friends. To get started simply click "Start a draft" below. You will be redirected to your draft room with an unique URL. Just share the URL with members of your group to invite them to your room.
+                a(class='btn btn-primary btn-lg', href='/make') Start a draft
+
+        div(class='container')
+            div(class='row')
+                div(class='col-md-4')
+                    h2 May 6th 2014
+                    p Really need to make this page look better.
+                div(class='col-md-4')
+                    h2 May 5th 2014
+                    p What?
+                div(class='col-md-4')
+                    h2 May 4th 2014
+                    p I don't know.
